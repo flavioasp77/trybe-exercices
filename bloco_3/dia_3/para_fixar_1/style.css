@@ -3,9 +3,15 @@ p {
   text-align: center;
 }
 
-li:hover {
+ol li:hover {
   background-color: chartreuse;
 }
-li:active {
+ol li:active {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+li {
+  list-style: none;
+}
+
+
