@@ -12,6 +12,7 @@
 h1, h3 {
     color: red;
     border: solid 1px black;
+    padding: 5px;
 }
 h1 em {
     font-size: 40px;
@@ -19,11 +20,38 @@ h1 em {
 /* Ítem 3 */
 li {
     font-size: 20px;
+    color:black;
 }
 li em {
     font-weight: bold;
 }
 /* Ítem 4 */
-.unordered-list li:nth-child(-3n+2) {
+.unordered-list li:nth-child(-n+3) {
     color: blue;
+}
+.pink {
+    background-color: pink;
+}
+
+
+#aliados li a:hover {
+    font-weight: 900;
+    
+}
+
+#aliados li a[href*="stackoverflow"] {
+    color: orange;
+}
+
+#aliados li a[href*="W3Schools"] {
+    color: green;
+}
+#aliados li a[href*="MDN Web Docs"] {
+    color: black;
+}
+#aliados li a[href*="DevDocs"] {
+    color: yellow;
+}
+#aliados li a[href*="Trybe"] {
+    color: green;
 }
