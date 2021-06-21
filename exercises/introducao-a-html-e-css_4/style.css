@@ -2,8 +2,19 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
+.header {
+    background-color: teal;
+    color: white;
+    padding: 10px 20px;
+}
 .navigation li{
     list-style: none;
     display: inline;
-
+    padding-right: 20px;
+}
+h1 {
+    color: turquoise;
+}
+.container {
+    padding: 10px 20px;
 }
