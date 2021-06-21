@@ -1,0 +1,29 @@
+/* Ítem 01 */
+.list-color{
+    background-color: yellow;
+}
+.ordered-list li:nth-child(odd){
+    color: green;
+}
+.ordered-list li:nth-child(even){
+    text-transform: uppercase;
+}
+/* Ítem 2 */
+h1, h3 {
+    color: red;
+    border: solid 1px black;
+}
+h1 em {
+    font-size: 40px;
+}
+/* Ítem 3 */
+li {
+    font-size: 20px;
+}
+li em {
+    font-weight: bold;
+}
+/* Ítem 4 */
+.unordered-list li:nth-child(-3n+2) {
+    color: blue;
+}
