@@ -18,3 +18,13 @@ h1 {
 .container {
     padding: 10px 20px;
 }
+nav a:link, :active, :visited {
+    color: white;
+    text-decoration: none;
+}
+nav a:hover {
+    color: white;
+    background-color: turquoise;
+    padding: 5px;
+    font-weight: 700;
+}
