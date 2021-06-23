@@ -1,5 +1,6 @@
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
     
 }
 .header {
@@ -15,8 +16,10 @@ body{
 h1 {
     color: turquoise;
 }
-.container {
-    padding: 10px 20px;
+main {
+    vertical-align: auto;
+    width: 70%;
+    padding: 10px 10px;
 }
 nav a:link, :active, :visited {
     color: white;
@@ -27,4 +30,21 @@ nav a:hover {
     background-color: turquoise;
     padding: 5px;
     font-weight: 700;
+}
+article {
+    padding: 20px;
+    float: left;
+    display: inline-block;
+    width: 70%;
+}
+aside {
+    padding: 20px;
+    float: left;
+    display: inline-block;
+    width: 20%;
+}
+footer{
+    clear: left;
+}img{
+    width: 100%;
 }
