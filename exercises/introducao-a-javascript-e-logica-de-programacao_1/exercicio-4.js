@@ -1,4 +1,4 @@
-let a = -20;
+let a = 20;
 
 if (a >= 1) {
   console.log("positive");
