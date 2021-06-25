@@ -5,5 +5,10 @@ let resultado = 0;
 for (let index = 0; index < numbers.length; index += 1) {
   resultado += numbers[index];
 }
-//apresenta a media aritmética dos valores do array numbers
-console.log(resultado / numbers.length);
+
+if ((resultado / numbers.length) > 20){
+  console.log("Valor maior que 20.");
+}else{
+  console.log("Valor menor ou igual a 20.");
+}
+
