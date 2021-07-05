@@ -95,8 +95,16 @@
     divLeftContent.appendChild(img);
     img.setAttribute('src', 'https://picsum.photos/200');
 
+    // Exercício 8
+    let listaNaoOrdenada = document.createElement('ul');
+    divRightContent.appendChild(listaNaoOrdenada);
+    let valores = ['um','dois','três','quatro','cinco','seis','sete','oito','nove','dez'];
 
-
+    for (let num of valores){
+      let listNum = document.createElement('li');
+      listNum.innerHTML = num;
+      listaNaoOrdenada.appendChild(listNum);
+    }
   </script>
 </body>
 
