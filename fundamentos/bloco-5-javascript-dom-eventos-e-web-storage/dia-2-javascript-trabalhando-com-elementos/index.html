@@ -80,7 +80,22 @@
     novaDiv.appendChild(paragrafo);
     paragrafo.innerHTML = 'Um texto é uma manifestação da linguagem. Pode ser definido como tudo aquilo que é dito por um emissor e interpretado por um receptor';
 
-    //
+    // Exercício 5
+    let divLeftContent  = document.createElement('div');
+    div.appendChild(divLeftContent);
+    divLeftContent.className = 'left-content';
+
+    // Exercício 6
+    let divRightContent = document.createElement('div');
+    div.appendChild(divRightContent);
+    divRightContent.className = 'right-content';
+
+    // Exercício 7
+    let img = document.createElement('img');
+    divLeftContent.appendChild(img);
+    img.setAttribute('src', 'https://picsum.photos/200');
+
+
 
   </script>
 </body>
