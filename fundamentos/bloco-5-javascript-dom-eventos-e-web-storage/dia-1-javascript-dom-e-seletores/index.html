@@ -63,41 +63,45 @@
       let paragrafo = document.getElementsByTagName('p')[1];
       paragrafo.innerHTML = "Quero estar trabalhando em uma empresa parceira da Trube";
     }
+    mundarTexto();
 
     // Exercício 2
     function mudarCorQuadradoAmarelo() {
-      let cor = document.getElementsByClassName('main-content');
-      cor.style.background = (rgb(76,164,109));
+      let cor = document.getElementsByClassName('main-content')[0];
+      cor.style.background = '(rgb(76, 164, 109))';
     }
+    mudarCorQuadradoAmarelo();
 
     // exercício 3
-    function mudaQuadroVermelho (){
-      let cor = document.getElementsByClassName('center-content');
+    function mudaQuadroVermelho() {
+      let cor = document.getElementsByClassName('center-content')[0];
       cor.style.background = 'white';
-    }   
+    }
+    mudaQuadroVermelho();
 
     // Exercício 4
     function corrigeH1() {
-      let titulo = document.getElementsByClassName('title');
+      let titulo = document.getElementsByClassName('title')[0];
       titulo.innerText = 'Exercício 5.1 - Javascript';
+    }
+    corrigeH1();
 
     // Exercício 5
-    function mudaCase(){
-      let paragrafo = document.getElementsByTagName('p')[1];
-      paragrafo.toUpperCase();
+    function mudaCase() {
+      let paragrafo = document.getElementsByTagName('p')[0];
+      paragrafo.innerHTML = paragrafo.innerHTML.toUpperCase();
     }
+    mudaCase();
 
     // Exercício 6
-    function exibeParagrafo(){
-      let paiParagrafo = document.querySelector('p').parentElement;
-      
-      for (let intem of paiParagrafo){
-        console.log(paiParagrafo);
+    function exibeParagrafo() {
+      let paragrafos = document.querySelector('p');
+
+      for (let intem of paragrafos) {
+        console.log(paragrafos.innerHTML);
       }
-
-
     }
-    
+    exibeParagrafo()
   </script>
 </body>
 
