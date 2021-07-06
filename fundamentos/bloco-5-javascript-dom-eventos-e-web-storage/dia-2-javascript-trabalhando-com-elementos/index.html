@@ -64,6 +64,7 @@
     let titulo = document.createElement('h1');
     titulo.innerHTML = 'Exercício 5.2 - JavaScript DOM';
     document.body.appendChild(titulo);
+    titulo.className = 'title';
 
     // Exercício 2
     let div = document.createElement('div');
@@ -106,11 +107,36 @@
       listaNaoOrdenada.appendChild(listNum);
     }
     // Exercício 9
-
+    let titleH3;
     for (let index = 0; index < 3; index +=1){
-      let titleH3 = document.createElement('h3');
+      titleH3 = document.createElement('h3');
       document.querySelector('.main-content').appendChild(titleH3);
+      titleH3.className = 'description';
     }
+
+    div.removeChild(divLeftContent);
+
+    divRightContent.style.marginRight = 'auto';
+
+    novaDiv.style.background = 'green';
+
+    listaNaoOrdenada.lastElementChild.remove();
+    listaNaoOrdenada.lastElementChild.remove();
+
+   
+
+    
+
+
+
+
+
+  
+      
+
+   
+   
+    
 
 
   </script>
