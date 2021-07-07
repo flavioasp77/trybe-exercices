@@ -99,7 +99,7 @@ function changeText(arrayDays) {
 let days = [4, 11, 18, 25];
 changeText(days);
 
-// Exercício 6
+// Exercício 06
 
 function zoomUp(){
   let days = document.querySelector('#days'); // pega todos os elementos dentro de #days
@@ -119,4 +119,16 @@ function zoomDown(){
 
 zoomUp();
 zoomDown();
+
+// exercicio 07
+
+function myTasks(getTask){
+  let taskList = document.querySelector('.my-tasks');
+  let task = document.createElement('span');
+  
+  task.innerText = getTask;
+  taskList.appendChild(task);
+}
+
+myTasks('Estudar');
 
