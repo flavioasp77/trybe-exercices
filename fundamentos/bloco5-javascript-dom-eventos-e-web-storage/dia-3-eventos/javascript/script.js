@@ -68,3 +68,15 @@ function showHoliday() {
 
 showHoliday();
 
+// Exercicio 4
+
+function createButtonFriday(string) {
+  const getDiv = document.querySelector('.buttons-container');
+  const newButton = document.createElement('button');
+
+  newButton.innerHTML = string;
+  newButton.id = 'btn-friday';
+  getDiv.appendChild(newButton);
+}
+
+createButtonFriday('Sexta-feira');
