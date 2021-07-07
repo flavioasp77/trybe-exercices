@@ -57,7 +57,7 @@ function showHoliday() {
   getButton.addEventListener('click', function () {
     for (let holiday of dayHoliday) { // cria um loop com todos os elementos na variavel dayHoliday
       // faz as verificaçẽos para trocar as cores de fundo
-      if (holiday.style.backgroundColor === setColor) { 
+      if (holiday.style.backgroundColor === setColor) {
         holiday.style.backgroundColor = defautColor;
       } else {
         holiday.style.backgroundColor = setColor;
@@ -68,7 +68,7 @@ function showHoliday() {
 
 showHoliday();
 
-// Exercicio 4
+// Exercicio 04
 
 function createButtonFriday(string) {
   const getDiv = document.querySelector('.buttons-container');
@@ -80,3 +80,21 @@ function createButtonFriday(string) {
 }
 
 createButtonFriday('Sexta-feira');
+// Exercício 05
+
+function changeText(arrayDays) {
+  let getButton = document.querySelector('#btn-friday');
+  let dayFriday = document.getElementsByClassName('friday');
+
+  getButton.addEventListener('click', function () {
+    for (let index = 0; index < dayFriday.length; index += 1) {
+      if (dayFriday[index].innerHTML === 'Sexta-feira') {
+        dayFriday[index].innerHTML = arrayDays[index];
+      } else {
+        dayFriday[index].innerHTML = 'Sexta-feira';
+      }
+    }
+  });
+}
+let days = [4, 11, 18, 25];
+changeText(days);
