@@ -132,3 +132,15 @@ function myTasks(getTask){
 
 myTasks('Estudar');
 
+// Exerício 8
+
+function subtitleColor(cor){
+  let taskList = document.querySelector('.my-tasks');
+  let subtitle = document.createElement('div');
+  
+  subtitle.className = 'task';
+  subtitle.style.background = cor;
+  taskList.appendChild(subtitle);
+}
+
+subtitleColor('blue');
