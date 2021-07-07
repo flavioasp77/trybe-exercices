@@ -98,3 +98,25 @@ function changeText(arrayDays) {
 }
 let days = [4, 11, 18, 25];
 changeText(days);
+
+// Exercício 6
+
+function zoomUp(){
+  let days = document.querySelector('#days'); // pega todos os elementos dentro de #days
+  
+  days.addEventListener('mouseover', function(event){
+    event.target.style.fontSize = '40px';
+  });
+}
+
+function zoomDown(){
+  let days = document.querySelector('#days');
+  
+  days.addEventListener('mouseout', function(event){
+    event.target.style.fontSize = '20px';
+  });
+}
+
+zoomUp();
+zoomDown();
+
