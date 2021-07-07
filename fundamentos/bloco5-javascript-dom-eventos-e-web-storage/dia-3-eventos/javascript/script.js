@@ -101,18 +101,18 @@ changeText(days);
 
 // Exercício 06
 
-function zoomUp(){
+function zoomUp() {
   let days = document.querySelector('#days'); // pega todos os elementos dentro de #days
-  
-  days.addEventListener('mouseover', function(event){
+
+  days.addEventListener('mouseover', function (event) {
     event.target.style.fontSize = '40px';
   });
 }
 
-function zoomDown(){
+function zoomDown() {
   let days = document.querySelector('#days');
-  
-  days.addEventListener('mouseout', function(event){
+
+  days.addEventListener('mouseout', function (event) {
     event.target.style.fontSize = '20px';
   });
 }
@@ -122,25 +122,41 @@ zoomDown();
 
 // exercicio 07
 
-function myTasks(getTask){
+function myTasks(getTask) {
   let taskList = document.querySelector('.my-tasks');
   let task = document.createElement('span');
-  
+
   task.innerText = getTask;
   taskList.appendChild(task);
 }
 
 myTasks('Estudar');
 
-// Exerício 8
+// Exerício 08
 
-function subtitleColor(cor){
+function subtitleColor(cor) {
   let taskList = document.querySelector('.my-tasks');
   let subtitle = document.createElement('div');
-  
+
   subtitle.className = 'task';
   subtitle.style.background = cor;
   taskList.appendChild(subtitle);
 }
 
 subtitleColor('blue');
+
+// Exercício 09
+function changeClass() {
+  let taskSelected = document.getElementsByClassName('task selected')
+  let element = document.querySelector('.task');
+
+  element.addEventListener('click', function (event) {
+    if (taskSelected.length === 0) {
+      event.target.className = 'task selected';
+    } else {
+      event.target.className = 'task';
+    }
+  });
+}
+
+changeClass();
