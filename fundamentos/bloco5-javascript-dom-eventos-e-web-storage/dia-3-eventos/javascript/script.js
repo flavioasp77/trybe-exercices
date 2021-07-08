@@ -160,3 +160,24 @@ function changeClass() {
 }
 
 changeClass();
+
+// Exercício 10
+
+function setDayColor() {
+  let selectedTask = document.getElementsByClassName('task selected'); // atribui o valor de um elemento que não existe mas vai fazer parte do
+  let days = document.querySelector('#days'); // pega os elementos dentro de #days
+  let taskDiv = document.querySelector('.task'); // pega o elemento com a class task
+  let taskColor = taskDiv.style.backgroundColor; // pega o atributo color da classe task
+  
+  days.addEventListener('click', function(event){
+    let eventTargetColor = event.target.style.color; // pega a cor atual do elemento
+    if (selectedTask.length > 0 && eventTargetColor !== taskColor) { // verifica se a selectedTask não está vazia e se a cor é diferente
+      let color = selectedTask[0].style.backgroundColor; // atribui a cor do elemento selecionado 
+      event.target.style.color = color; // aplica a cor
+    } else if (eventTargetColor === taskColor && selectedTask.length !== 0) { 
+      event.target.style.color = 'rgb(119,119,119)'; // tira a cor
+    }
+  });
+};
+
+setDayColor();
