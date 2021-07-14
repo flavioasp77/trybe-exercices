@@ -16,56 +16,67 @@
   </header>
 
   <main>
-    <fieldset>
-      <legend>Dados Pessoais</legend>
+    <form action="" method="GET">
+      <fieldset class="data-info">
+        <legend>Dados Pessoais</legend>
 
-      <label for="input-name">Nome:
-        <input type="text" name="name" id="name" required maxlength="40">
-      </label>
-
-      <label for="input-email">E-mail:
-        <input type="email" name="email" id=email" required maxlength=" 50">
-      </label>
-
-      <Label for="input-adress">Endereço<: /Label>
+        <label for="input-name">Nome:
+          <input type="text" name="name" id="input-name" required maxlength="40">
+        </label>
+        <br><br>
+        <label for="input-email">E-mail:
+          <input type="email" name="email" id="input-email" required maxlength=" 50">
+        </label>
+        <br><br>
+        <Label for="input-adress">Endereço:
           <input type="text" name="adress" id="input-adress" required maxlength="200">
-
-          <label for="input-city">Cidade:</label>
+        </label>
+        <br><br>
+        <label for="input-city">Cidade:
           <input type="text" name="city" id="input-city" required maxlength="28">
-
+        </label>
+        <br><br>
+        <label for="state">Estado:
           <select name="state" id="state" required>
+            <option value="defout" selected>Escolha seu estado...</option>
             <!-- inserir via js -->
           </select>
+        </label>
+        <br><br>
+        <label for="home">Tipo:
+          <input type="radio" name="type" id="home" value="Casa" required> Casa
+        </label>
+        <label for="apartment">
+          <input type="radio" name="type" id="apartment" value="Apartamento" required> Apartamento
+        </label>
+        <br><br>
+      </fieldset>
+      <fieldset class="data-info">
+        <legend>Último emprego</legend>
 
-          <label for="home">Tipo:
-            <input type="radio" name="type" id="home" value="Casa" required>Casa
-          </label>
-          <label for="apartment">
-            <input type="radio" name="type" id="apartment" value="Apartamento" required>Apartamento
-          </label>
-
-    </fieldset>
-    <fieldset>
-      <legend>Último emprego</legend>
-
-      <label for="input-sumary">Resumo:
-        <textarea name="sumary" id="input-sumary" cols="30" rows="10" requiredmaxlength="1000"></textarea>
-      </label>
-
-      <label for="input-office">Cargo:
-        <input type="text" name="input-office" id="office" required height="50">
-      </label>
-
-      <label for="input-day">Data de ínicio:
-        <input type="text" name="day" id="input-day" required maxlength="2" size="1"> /
-      </label>
-      <label for="input-mouth">
-        <input type="text" name="mouth" id="input-mouth" required maxlength="2" size="1"> /
-      </label>
-      <label for="input-year">
-        <input type="text" name="year" id="input-year" required maxlength="4" size="2">
-      </label>
-    </fieldset>
+        <label for="input-sumary">Resumo:
+          <textarea name="sumary" id="input-sumary" rows="10" requiredmaxlength="1000"></textarea>
+        </label>
+        <br><br>
+        <label for="input-office">Cargo:
+          <input type="text" name="input-office" id="office" required height="50">
+        </label>
+        <br><br>
+        <label for="input-day">Data de ínicio:
+          <input type="text" name="day" id="input-day" required maxlength="2" size="1"> /
+        </label>
+        <label for="input-mouth">
+          <input type="text" name="mouth" id="input-mouth" required maxlength="2" size="1"> /
+        </label>
+        <label for="input-year">
+          <input type="text" name="year" id="input-year" required maxlength="4" size="2">
+        </label>
+      </fieldset>
+      <fieldset class="data-info">
+        <button type="submit" name="submit">Enviar</button>
+        <button type="reset" name="reset">Reset</button>
+      </fieldset>
+    </form>
   </main>
 
   <script src="script.js"></script>
