@@ -19,6 +19,6 @@ const findUserById = (id) => new Promise((resolve, reject) => {
 
 module.exports = {
   findUserById,
-  getUserName,
+  //getUserName,
 }
 
