@@ -13,7 +13,7 @@ const findUserById = (id) => new Promise((resolve, reject) => {
   return reject(new Error(`User with ${id} not found.`));
 });
 
-const getUserName = (userId) => findUserById(userId).then((user) => user.name);
+// const getUserName = (userId) => findUserById(userId).then((user) => user.name);
 
 // console.log(getUserName(1));
 

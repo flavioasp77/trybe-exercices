@@ -1,6 +1,5 @@
 const {
   findUserById,
-  getUserName,
 } = require('../js/exe02');
 
 describe('Testando usuários', () => {
@@ -15,4 +14,11 @@ describe('Testando usuários', () => {
       expect(user.name).toEqual('Paul');
     })
   ));
+
+  it('Testando se o usuário não existe', () => {
+    expect.assertions(1);
+    return findUserById(3).catch((error) => {
+      expect(error.message).toMatch(`User with 3 not found.`);
+    })
+  });
 });
