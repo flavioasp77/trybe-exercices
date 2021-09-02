@@ -2,6 +2,7 @@ import React from 'react';
 
 class Pokemon extends React.Component {
     render() {
+        // desestruturando as chaves do objeto Pokemons
         const { name, type, averageWeight, image } = this.props.pokemon;
 
         return (
