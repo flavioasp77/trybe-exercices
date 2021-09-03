@@ -46,7 +46,7 @@ class Form extends React.Component {
             <option value="opção 4">opção 4</option>
           </select>
           
-          <label for="resume">Resumo:</label>
+          <label htmlFor="resume">Resumo:</label>
           <textarea 
             type="textarea"
             id="resume"
@@ -60,7 +60,7 @@ class Form extends React.Component {
             id="check" 
             onChange={this.handleChange}
           />
-          <label for="check">Marque ou não marque</label>
+          <label htmlFor="check">Marque ou não marque</label>
         </form>
       </section>
     );
